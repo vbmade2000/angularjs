@@ -1,0 +1,21 @@
+var NgCryptDemoModule = angular.module("NgCryptDemoApp", [])
+
+function captext(data)
+{
+	return data.toUpperCase();
+}
+
+NgCryptDemoModule.controller("ngCryptDemoController", function($scope){
+	alert("Hello WOrld");
+})
+
+
+
+NgCryptDemoModule.filter("crypt", function(){
+
+	
+	return function(text, key){
+	     alert(key);
+	     return captext(text);
+	}
+});

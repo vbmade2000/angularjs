@@ -1,0 +1,13 @@
+var NgCryptDemoModule = angular.module("NgCryptDemoApp");
+alert("Hello from ngCryptController.js");
+NgCryptDemoModule.controller("ngCryptDemoController", function($scope){
+	$scope.text = "Hello World";
+	$scope.hash_algorithm = "RIPEMD160";
+	$scope.enc_algorithm = "aes";
+	$scope.key = "123456789";
+
+})
+
+
+
+

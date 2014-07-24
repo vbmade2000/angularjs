@@ -1,0 +1,5 @@
+var NgCryptDemoApp = angular.module("NgCryptDemoApp", ['ngCrypt']);
+alert("Hello from app.js");
+
+
+
